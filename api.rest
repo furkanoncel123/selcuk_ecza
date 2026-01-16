@@ -1,0 +1,26 @@
+### Kullanıcı Girişi (Login)
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "kullanici_adi": "yonetici",
+    "sifre": "123456"
+}
+
+### Yeni Kullanıcı Kaydı (Register)
+POST http://localhost:3001/api/register
+Content-Type: application/json
+
+{
+    "adi": "Test",
+    "soyadi": "Kullanici",
+    "hesap_no": "123456789",
+    "kullanici_adi": "testuser",
+    "sifre": "testpass"
+}
+
+### Kullanıcıları Listele (Users)
+GET http://localhost:3001/api/users
+
+### Satış Verilerini Getir (Sales)
+GET http://localhost:3001/api/sales
